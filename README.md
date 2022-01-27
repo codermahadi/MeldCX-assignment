@@ -10,6 +10,8 @@ Using
 - Typescript
 - Axios
 
+Run Application
+-------
 - npm install
 - npm run dev
 - npm run build
