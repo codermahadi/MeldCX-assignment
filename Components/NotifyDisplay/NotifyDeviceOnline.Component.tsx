@@ -28,7 +28,7 @@ const NotifyDeviceOnlineComponent = () => {
             repoUrl: 'https://github.com/codermahadi/MeldCX-assignment.git',
             message: 'I got the data correctly. Thank you',
         }
-        axios.post('', data, {headers: {'Authorization': 'Bearer ' + cookies.user}}).then(r => console.log(r)).catch(e => console.log(e))
+        axios.post('http://35.201.2.209:8000/notify', data, {headers: {'Authorization': 'Bearer ' + cookies.user}}).then(r => alert(r.data)).catch(e => console.log(e))
     }, [])
 
     const getDataAfterFiveSecond = useCallback(async () => {
