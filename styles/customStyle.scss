@@ -1,0 +1,192 @@
+.Form_Main {
+  background-color: #191919;
+  width: 100%;
+  height: 100vh;
+
+  .MailForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .mail_form {
+      width: 400px;
+      height: auto;
+      background: #ffffff;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 3px 6px 9px 0px #000000e0;
+      border-radius: 5px;
+
+      .LogHead {
+        font-size: 42px;
+        line-height: 1;
+        text-transform: capitalize;
+        color: #707070;
+        text-align: center;
+        font-weight: 200;
+        margin-bottom: 30px;
+      }
+
+      .Form {
+
+        .Input_item {
+          background: #eceff1;
+          padding: 10px;
+          border-radius: 5px;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .icon {
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+          }
+
+          .inputBox {
+            width: 100%;
+          }
+
+          input {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            width: 100%;
+          }
+        }
+      }
+
+      .btnWrap {
+        button {
+          color: #fff;
+          background-color: #0277bd;
+          padding: 8px 25px;
+          font-size: 14px;
+          text-transform: uppercase;
+          outline: none;
+          box-shadow: none;
+          border-radius: 5px;
+
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+  }
+}
+
+.NotifyDeviceOnlineWrap {
+  background: #ff7043;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .NotifyDeviceOnlineInner {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .CountOfDevices {
+      text-align: center;
+      color: #fff;
+
+      h2 {
+        font-weight: 300;
+        font-size: 100px;
+        margin-bottom: 0;
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .notifyBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0004;
+    padding: 20px;
+
+    .notifyBottomInner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .notifyBtn {
+        .btn {
+          padding: 5px 25px;
+          background: #fff;
+          margin-right: 15px;
+          font-weight: 700;
+
+          & + .btn {
+            background: #37474f;
+            color: #fff;
+          }
+
+          &:active {
+            transform: scale(0.98);
+          }
+        }
+      }
+    }
+  }
+}
+
+.ConnectDevice {
+  position: absolute;
+  .ConnectDeviceInner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //animation: round1 25s linear infinite;
+  }
+}
+
+.round {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  //animation: round 25s linear infinite;
+}
+
+@keyframes round {
+
+  0% {
+    transform: rotate(-360deg);
+  }
+
+}
+@keyframes round1 {
+
+  0% {
+    transform: rotate(360deg);
+  }
+
+}
